@@ -20,9 +20,17 @@ h1 {
 
 body {
 	height:100%;  /* For browsers that do not support gradients */
-  	background-image: linear-gradient(#0f0ff1, #ac9ae8);
+  	//background-image: linear-gradient(#0f0ff1, #ac9ae8);
   	overflow-x: hidden;
+  	position: relative;
+}
 
+.back-img{
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	position: absolute;
+	background-repeat: repeat;
 }
 
 p {
@@ -149,7 +157,7 @@ hr {
 	color:white;
 }
 .black{
-	color:black;
+	color:white;
 }
 #one{
 	margin-top:160px;
@@ -167,4 +175,12 @@ hr {
 .link{
 	color:blue;
 	text-decoration: none !important;
+}
+
+#footer{
+	//position: fixed;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+    bottom: 0;
+    height: 100%;
 }
